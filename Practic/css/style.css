@@ -72,4 +72,41 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
 }
 
-/*--------------------*//*# sourceMappingURL=style.css.map */
+/*--------------------*/
+body {
+  font-family: Montserrat;
+  color: #151515;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header__inner {
+  padding-top: 20px;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo path {
+  transition: fill 0.3s ease;
+}
+.header__logo path:hover {
+  fill: #F41240;
+}
+.header__list {
+  display: flex;
+  justify-content: space-between;
+}
+.header__list-link {
+  margin-left: 30px;
+  color: #0D0D0D;
+}
+.header__list-link:hover {
+  color: #F41240;
+}/*# sourceMappingURL=style.css.map */

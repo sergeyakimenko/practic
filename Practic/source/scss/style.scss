@@ -5,3 +5,61 @@
 //шрифты
 //&display=swap&subset=cyrillic-ext для кириллицы
 @import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600&display=swap&subset=cyrillic-ext);
+
+$Montserrat: Montserrat;
+
+body{
+    font-family: $Montserrat;
+    color: #151515;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+
+    &__inner {
+        padding-top: 20px;
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        path{
+            transition: fill 0.3s ease;
+            &:hover{
+                
+                fill: #F41240;
+            }
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    &__list-link {
+        margin-left: 30px;
+        color: #0D0D0D;
+        &:hover{
+            color: #F41240;
+        }
+    }
+
+    &__rutube {
+    }
+
+    &__rutube-img {
+    }
+}
+
