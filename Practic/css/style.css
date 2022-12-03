@@ -82,7 +82,7 @@ body {
 .container {
   max-width: 1260px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 30px;
 }
 
 .header__inner {
@@ -93,20 +93,114 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.header__logo path {
-  transition: fill 0.3s ease;
+.header__logo {
+  color: #283238;
+  transition: all 0.3s ease;
 }
-.header__logo path:hover {
-  fill: #F41240;
+.header__logo:hover {
+  transition: all 0.3s ease;
+  color: #F41240;
 }
 .header__list {
   display: flex;
   justify-content: space-between;
 }
 .header__list-link {
+  text-transform: uppercase;
   margin-left: 30px;
   color: #0D0D0D;
+  transition: 0.3s ease;
 }
 .header__list-link:hover {
   color: #F41240;
+}
+.header__rutube-link {
+  display: block;
+  width: 52px;
+  height: 50px;
+}
+.header__rutube-link:hover {
+  display: none;
+}
+.header__rutube-link svg:hover {
+  display: none;
+}
+.header__rutube-link-2 {
+  display: none;
+}
+.header__rutube-link-2:hover {
+  display: block;
+}
+
+.main {
+  margin-top: 20px;
+  margin-bottom: 74px;
+}
+.main__video-video {
+  position: absolute;
+  min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main__title {
+  padding-top: 150px;
+  position: relative;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 150%;
+  color: #fff;
+  text-align: center;
+  top: 30%;
+  bottom: 0;
+}
+.main__title span:before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 47.8%;
+  background-color: #DC0000;
+  border-radius: 50%;
+  transform: translateX(-100%);
+  width: 12px;
+  height: 12px;
+}
+.main__contact {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+  align-items: center;
+}
+.main__contact-tel {
+  font-weight: 500;
+  font-size: 33px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #fff;
+}
+.main__contact-tel span {
+  color: #929292;
+}
+.main__link {
+  transition: all 0.6s ease;
+  border-radius: 50%;
+}
+.main__link:hover {
+  transition: all 0.6s ease;
+  background-color: #fff;
+}
+.main__link:hover path {
+  stroke: #0D0D0D;
+  transition: all 0.6s ease;
+}
+.main__mail-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.main__mail-link:hover {
+  color: #DC0000;
 }/*# sourceMappingURL=style.css.map */
