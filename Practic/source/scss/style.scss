@@ -86,7 +86,7 @@ body{
 
 .main {
     margin-top: 20px;
-    margin-bottom: 74px;
+    margin-bottom: 140px;
     &__video{
         
     }
@@ -180,9 +180,16 @@ body{
     }
 
     &__title {
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: 0.5em;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 70px;
     }
 
     &__items {
+        display: flex;
     }
 
     &__item {

@@ -134,7 +134,7 @@ body {
 
 .main {
   margin-top: 20px;
-  margin-bottom: 74px;
+  margin-bottom: 140px;
 }
 .main__video-video {
   position: absolute;
@@ -203,4 +203,15 @@ body {
 }
 .main__mail-link:hover {
   color: #DC0000;
+}
+.video__title {
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.video__items {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
