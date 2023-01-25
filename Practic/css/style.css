@@ -73,6 +73,119 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  display: none;
+}
+[dir=rtl] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+.slick-prev {
+  position: absolute;
+  bottom: 320px;
+  left: 50px;
+  background-image: url(/img-slider/Arow-left.svg);
+  background-color: inherit;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  z-index: 800;
+  font-size: 0;
+}
+
+.slick-next {
+  position: absolute;
+  bottom: 320px;
+  right: 50px;
+  background-image: url(/img-slider/Arow-right.svg);
+  background-color: inherit;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  z-index: 800;
+  font-size: 0;
+}
+
 body {
   font-family: Montserrat;
   color: #151515;
@@ -167,7 +280,7 @@ body {
 .main__contact {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding-top: 100px;
   align-items: center;
 }
@@ -181,15 +294,17 @@ body {
 .main__contact-tel span {
   color: #929292;
 }
-.main__link {
+.main__button {
   transition: all 0.6s ease;
   border-radius: 50%;
+  margin-left: 270px;
+  margin-right: 200px;
 }
-.main__link:hover {
+.main__button:hover {
   transition: all 0.6s ease;
   background-color: #fff;
 }
-.main__link:hover path {
+.main__button:hover path {
   stroke: #0D0D0D;
   transition: all 0.6s ease;
 }
@@ -214,4 +329,32 @@ body {
 }
 .video__items {
   display: flex;
+}
+.video-slider {
+  max-width: 1920px;
+  height: 737px;
+}
+.video-slider__item {
+  margin-right: 25px;
+  margin-left: 30px;
+}
+.video-slider__video {
+  border-radius: 20px;
+  min-width: 100%;
+  margin-bottom: 10px;
+}
+.video-slider__link {
+  margin-left: 10px;
+  font-weight: 400;
+  font-size: 26px;
+  color: #151515;
+  transition: all 0.3s ease;
+}
+.video-slider__link:hover {
+  color: #DC0000;
+  transition: all 0.3s ease;
+}
+.video-slider__link-svg {
+  fill: #DC0000;
+  margin-left: 25px;
 }/*# sourceMappingURL=style.css.map */
