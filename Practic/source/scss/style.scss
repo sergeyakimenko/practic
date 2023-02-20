@@ -203,7 +203,7 @@ body{
 
 .video-slider {
     max-width: 1920px;
-    height: 737px;
+    height: 500px;
     &__item {
         margin-right: 25px;
         margin-left: 30px;
@@ -231,8 +231,176 @@ body{
     &__link-svg{
         fill: #DC0000;
         margin-left: 25px;
-        &:hover{
-        }
     }
     
+}
+
+
+.animation-logo {
+    margin-bottom: 110px;
+    &__inner {
+    }
+}
+.animation {
+    position: relative;
+    &__logo-white {
+        position: absolute;
+        z-index: 1;
+    }
+
+    &__logo-black {
+        position: absolute;
+        top: 80px;
+        z-index: 2;
+    }
+}
+
+
+.services {
+    padding-top: 207px;
+    &__container {
+        max-width: 1260px;
+        margin: 0 auto;
+        padding: 0 120px;
+
+    }
+
+    &__inner {
+        display: flex;
+    }
+
+    &__title {
+        font-size: 18px;
+        letter-spacing: 0.5em;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+    &__title-blocks {
+        ::before{
+            content: "";
+            display: flex;
+            width: 82.5px;
+            border: 2px solid #DC0000;
+            margin-bottom: 40px;
+            margin-top: 70px;
+        }
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 140%;
+        margin-bottom: 40px;
+    }
+
+    &__img {
+        margin-bottom: 40px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 180%;
+        margin-bottom: 40px;
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        line-height: 160%;
+        letter-spacing: 0.5em;
+        color:#DC0000;
+        margin-bottom: 40px;
+    }
+
+    &__list{
+        margin-bottom: 40px;
+    }
+
+    &__list-li{
+        position: relative;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 40px;
+        padding-left: 14px;
+        ::before {
+            content: '.';
+            position: absolute;
+            margin-top: -4px;
+            left: 0;
+            
+        }
+        ::after {
+            content: '';
+            display: flex;
+            border: 1px solid #DADADA;
+        }
+        :last-child::after{
+            border: none;
+        }
+        
+    }
+}
+.block-left {
+    padding-right: 60px;
+}
+.block-right {
+    padding-top: 184px;
+}
+
+.about {
+    background-color: #F3F3F3;;
+    &__container {
+        max-width: 1920px;
+        margin: 0 auto;
+        padding: 0 50px;
+    }
+
+    &__inner {
+    }
+
+    &__block-text {
+        display: flex;
+    }
+
+    &__subtitle {
+        text-align: center;
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: 0.5em;
+        text-transform: uppercase;
+        color: #868686;;
+    }
+
+    &__block-statistics {
+    }
+
+    &__hours {
+    }
+
+    &__numbers {
+    }
+
+    &__text {
+    }
+
+    &__block-events {
+    }
+
+    &__block-sport {
+    }
+}
+.block-text {
+
+    &__title {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 120%;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 170%;
+        p{
+            margin-bottom: 40px;
+        }
+    }
 }
